@@ -1,0 +1,353 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.divider {
+  height: 1px;
+  width:100%;
+  display:block; /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#top-dropdown{
+  background: #879e72;
+}
+
+#top-dropdown > a:hover,
+#top-dropdown > a:focus {
+    
+    background-color: #455c30;
+  }
+
+.dropdown-title{
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
+}
+
+
+.navbar-default{
+  background: url(../images/header_bg.png) center center;
+}
+
+/*header begins*/
+header{
+  
+  background: url(../images/header_bg.png);
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 500px){
+  .logo{
+    font-size: 16px;
+  }
+}
+
+
+.account_btn{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;  
+  width: fit-content;
+  min-width: 220px;
+  padding-left: 1em;
+  padding-right: 1em;
+  background: #e1e1e1;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.account_name{
+  float: left;
+}
+
+.account_roles{
+  float: left;
+  text-align: left;
+  padding-left: 1em;
+  margin-left: 1em;
+  border-left: 1px solid #ffffff;
+}
+/*header ends*/
+
+/*search begins*/
+.search_container{
+  position: relative;
+  height: 360px;
+  background: url(../images/crossword.png);
+  z-index: 1;
+  box-shadow: 1px 0px 1px 1px rgba(0,0,0,0.35);
+}
+
+.search{
+  padding-top: 120px;
+}
+
+.control-label{
+  font-size: 28px;
+  font-weight: bold;
+  color:#677e52;
+}
+/*search ends*/
+
+/*highlight begins*/
+.highlight_container{
+  position: relative;
+  z-index: 0;
+  background: url(../images/circles_bg.png) ;
+}
+
+.highlight{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.circular {
+  width: 240px;
+  height: 240px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background-size: cover;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  border: 4px solid #ffffff;
+  margin: 0 auto;
+}
+
+#circle_1{
+   background: url('../images/data.png') center center;
+}
+
+#circle_2{
+   background: url('../images/tutorial.jpg') center center;
+}
+
+#circle_3{
+   background: url('../images/bookshelf.jpg') center center;
+}
+
+.circular_info{
+  margin: 30px auto;
+}
+/*highlight ends*/
+
+/*post begins*/
+
+.posts{
+  margin: 0 auto;
+  overflow: hidden;
+  border-top: 1px solid #f1f1f1;
+   margin-left: 50px;
+   margin-right: 30px;
+}
+
+.posts:last-of-type{
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.postTitle{
+  font-size: 18px;
+}
+
+
+.postImage{
+
+  height: 160px;
+  border: none;
+  display: block;
+  overflow: hidden;
+ 
+ 
+}
+
+#postImage_1{
+  background: url('../images/milk.jpg') center center;
+  background-size: contain;
+}
+
+#postImage_2{
+  background: url('../images/wheat.jpg') center center;
+   background-size: contain;
+}
+
+#postImage_3{
+  background: url('../images/article.jpg') center center;
+   background-size: contain;
+}
+
+.post_content{
+  color: #919191;
+  height: 160px;
+  padding-top: 15px;
+}
+
+.post_detail{
+  line-height: 1.2em;
+}
+
+.postDate{
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+/*post ends*/
+
+/* sidebar */
+.sidebar {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  list-style-type: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 0 20px;
+}
+.sidebar a {
+  display: block;
+  color: #666666;
+  text-decoration: none;
+  width: 100%;
+  height: 70px;
+  padding-left: 90px;
+}
+.sidebar span {
+  padding-top: 28px;
+  display: block;
+}
+.sidebar .var_nav {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 1.2em;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.sidebar .var_nav:hover .link_bg {
+  width: 70px;
+  background: #62774e;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar .var_nav:hover a {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #62774e;
+}
+.sidebar .link_bg {
+  width: 5px;
+  height: 70px;
+  position: absolute;
+  background: #62774e;
+  color: #fff;
+  z-index: 2;
+}
+.sidebar .link_bg i {
+  position: relative;
+}
+.sidebar .link_text {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+.sidebar .link_text .icon {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  color: #fff;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  float: left;
+}
+.sidebar .link_text .icon i {
+  top: 22px;
+  position: relative;
+}
+/*sidebar ends*/
+
+.sidebar_left{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.sidebar_right{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*Dashboard Page starts*/
+.review-status{
+    padding: 0 10px;
+}
+
+.heading{
+	padding: 15px 0;
+}
+
+.heading-text{
+  float: left;
+}
+
+.heading-btn{
+	padding-top:8px; 
+  float: right;
+}
+/*Dashboard Page ends*/
