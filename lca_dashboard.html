@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="css/styles.css?v=1.0">
 	<link rel="stylesheet" href="css/bootstrap.css?v=1.0">
 
-
 	<!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+
 </head>
 
 <body>
@@ -24,6 +24,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-switch.min.js"></script>
+
 
 	<div class="navbar navbar-default">
 		<div class="navbar-header">
@@ -48,7 +50,6 @@
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-
 				<li id="top-dropdown" class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						<div class="dropdown-title">Hi, George <b class="caret"></b>
@@ -82,24 +83,63 @@
 				<h3>Your Submission</h3>
 			</div>
 			<div class="heading-btn">
-			<button type="button" class="btn btn-primary btn-lg">
-				<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Submit Data
-			</button>
-			<button type="button" class="btn btn-defaul btn-lg">View All Submissions
-			</button>
-			</div>	
+				<button type="button" class="btn btn-primary">
+					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Submit Data
+				</button>
+				<button type="button" class="btn btn-defaul">View All Submissions
+				</button>
+			</div>
 
 		</div>
 
-		<div class="col-xs-10 col-xs-offset-1">
+		<div class="col-xs-8 col-xs-offset-1">
 			<div class="panel panel-default">
 				<!-- Default panel contents -->
 				<div class="panel-heading">
 					<h4>Gold Ore at Mine</h4>
 				</div>
 				<div class="panel-body">
-					<p><span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="review-status">In Review</span>
-					</p>
+					<span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="review-status">In Review</span>
+
+				</div>
+
+				<!-- Table -->
+				<div class="table-responsive">
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr>
+								<th>Submitted On:</th>
+								<th>Accepted for Review:</th>
+								<th>Assigned to Reviewer:</th>
+								<th>The Last Comment:</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>09/29/2014</td>
+
+								<td>09/29/2014</td>
+
+								<td>09/29/2014</td>
+
+								<td>This is a comment</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-8 col-xs-offset-1">
+			<div class="panel panel-default">
+				<!-- Default panel contents -->
+				<div class="panel-heading clearfix">
+					<div class="heading-text">
+						<h4>Gold Ore at Mine</h4>
+					</div>
+				</div>
+
+				<div class="panel-body">
+					<span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="review-status">In Review</span>
 				</div>
 
 				<!-- Table -->
@@ -129,120 +169,183 @@
 			</div>
 		</div>
 	</div>
-	<div class="highlight_container row">
-		<div class="highlight col-xs-12 col-sm-4">
-			<div id="circle_1" class="circular"></div>
-			<div class="circular_info">
-				<button type="button" class="btn btn-primary btn-lg">Browse Data</button>
-			</div>
-		</div>
-		<div class="highlight col-xs-12 col-sm-4">
-			<div id="circle_2" class="circular"></div>
-			<div class="circular_info">
-				<button type="button" class="btn btn-primary btn-lg">New User Tutorial</button>
-			</div>
-		</div>
-		<div class="highlight col-xs-12 col-sm-4">
-			<div id="circle_3" class="circular"></div>
-			<div class="circular_info">
-				<button type="button" class="btn btn-primary btn-lg">Resources</button>
-			</div>
-		</div>
-	</div>
+
 	<div class="row">
-		<div class="sidebar_left col-xs-12 col-sm-8">
-			<div class="row">
-				<div class="posts">
-					<div class="postImage col-xs-4" id="postImage_1">
+		<div class="heading col-xs-10 col-xs-offset-1">
+			<div class="heading-text">
+				<h3>Your Reivews</h3>
+			</div>
+		</div>
+		<div class="col-xs-8 col-xs-offset-1">
+			<div class="panel panel-default">
+				<!-- Default panel contents -->
+				<div class="panel-heading clearfix">
+					<div class="heading-text">
+						<h4>Gold Ore at Mine</h4>
 					</div>
 
-					<div class="post_content col-xs-8">
-						<div class="postHeader">
-							<a class="postTitle" href="#">Article title</a>
-							<div class="postDate">July 23, 2013</div>
-						</div>
-
-						<div class="post_detail">
-							<p>
-								Here is a snippet of what you're going to find in this blog post. This is going to be about a really cool subject matter that the general public is hyped about.
-							</p>
-							<a class="readMore" href="#">Read More...<i class="icon-arrow-right"></i></a>
-						</div>
-					</div>
+					<button type="button" class="btn-review btn btn-primary">
+						Review
+					</button>
 				</div>
-				<div class="posts">
-					<div class="postImage col-xs-4" id="postImage_2">
-					</div>
+				<div class="panel-body">
+					<span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="review-status">In Review</span>
 
-					<div class="post_content col-xs-8">
-						<div class="postHeader">
-							<a class="postTitle" href="#">Article title</a>
-							<div class="postDate">July 23, 2013</div>
-						</div>
-
-						<div class="post_detail">
-							<p>
-								Here is a snippet of what you're going to find in this blog post. This is going to be about a really cool subject matter that the general public is hyped about.
-							</p>
-							<a class="readMore" href="#">Read More...<i class="icon-arrow-right"></i></a>
-						</div>
-					</div>
 				</div>
-				<div class="posts">
-					<div class="postImage col-xs-4" id="postImage_3">
-					</div>
 
-					<div class="post_content col-xs-8">
-						<div class="postHeader">
-							<a class="postTitle" href="#">Article title</a>
-							<div class="postDate">July 23, 2013</div>
-						</div>
+				<!-- Table -->
+				<div class="table-responsive">
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr>
+								<th>Submitted On:</th>
+								<th>Accepted for Review:</th>
+								<th>Assigned to Reviewer:</th>
+								<th>The Last Comment:</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>09/29/2014</td>
 
-						<div class="post_detail">
-							<p>
-								Here is a snippet of what you're going to find in this blog post. This is going to be about a really cool subject matter that the general public is hyped about.
-							</p>
-							<a class="readMore" href="#">Read More...<i class="icon-arrow-right"></i></a>
-						</div>
-					</div>
+								<td>09/29/2014</td>
+
+								<td>09/29/2014</td>
+
+								<td>This is a comment</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
-		<div class="sidebar_right col-xs-12 col-sm-4">
-			<nav class="navi">
-				<ul class="sidebar">
-					<li class="var_nav">
-						<div class="link_bg"></div>
-						<div class="link_text">
-							<div class=icon>
-								<i class="icon-book icon-2x"></i>
-							</div>
-							<a href="#"><span>Educate me</span></a>
-						</div>
-					</li>
-					<li class="var_nav">
-						<div class="link_bg"></div>
-						<div class="link_text">
-							<div class=icon>
-								<i class="icon-beaker icon-2x"></i>
-							</div>
-							<a href="#"><span>Obtain/move biologicals</span></a>
-						</div>
-					</li>
-					<li class="var_nav">
-						<div class="link_bg"></div>
-						<div class="link_text">
-							<div class=icon>
-								<i class="icon-bar-chart icon-2x"></i>
-							</div>
-							<a href="#"><span>Rates</span></a>
-						</div>
-					</li>
-				</ul>
-			</nav>
+	</div>
+
+	<div class="row">
+		<div class="heading col-xs-10 col-xs-offset-1">
+			<div class="heading-text">
+				<h3>Editor's Tasks</h3>
+			</div>
+		</div>
+		<div class="col-xs-8 col-xs-offset-1">
+			<div class="panel panel-default">
+				<!-- Default panel contents -->
+				<div class="panel-heading clearfix">
+					<div class="heading-text">
+						<h4>Gold Ore at Mine</h4>
+					</div>
+					<div class="tgbtn btn-group" data-toggle="buttons">
+						<label class="btn btn-default active">
+							<input type="radio" name="options" id="option1" autocomplete="off" checked>Revoked
+						</label>
+						<label class="btn btn-default">
+							<input type="radio" name="options" id="option2" autocomplete="off">Claimed
+						</label>
+					</div>
+					<button type="button" class="btn-review btn btn-primary">
+						Assign to Reviewer
+					</button>
+				</div>
+				<div class="panel-body">
+					<span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="review-status">In Review</span>
+
+				</div>
+
+				<!-- Table -->
+				<div class="table-responsive">
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr>
+								<th>Submitted On:</th>
+								<th>Accepted for Review:</th>
+								<th>Assigned to Reviewer:</th>
+								<th>The Last Comment:</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>09/29/2014</td>
+
+								<td>09/29/2014</td>
+
+								<td>09/29/2014</td>
+
+								<td>This is a comment</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-8 col-xs-offset-1">
+			<div class="panel panel-default">
+				<!-- Default panel contents -->
+				<div class="panel-heading clearfix">
+					<div class="heading-text">
+						<h4>Gold Ore at Mine</h4>
+					</div>
+					<div class="tgbtn btn-group" data-toggle="buttons">
+						<label class="btn btn-default active">
+							<input type="radio" name="options" id="option1" autocomplete="off" checked>Revoked
+						</label>
+						<label class="btn btn-default">
+							<input type="radio" name="options" id="option2" autocomplete="off">Claimed
+						</label>
+					</div>
+					<button type="button" class="btn-review btn btn-primary">
+						Assign to Reviewer
+					</button>
+				</div>
+				<div class="panel-body">
+					<span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span><span class="review-status">In Review</span>
+
+				</div>
+
+				<!-- Table -->
+				<div class="table-responsive">
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr>
+								<th>Submitted On:</th>
+								<th>Accepted for Review:</th>
+								<th>Assigned to Reviewer:</th>
+								<th>The Last Comment:</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>09/29/2014</td>
+
+								<td>09/29/2014</td>
+
+								<td>09/29/2014</td>
+
+								<td>This is a comment</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="divider"></div>
 		</div>
 
+		<div class="heading col-xs-10 col-xs-offset-1">
+			<div class="heading-text">
+				<h3>Your Downloads</h3>
+			</div>
+		</div>
+		<div class="list-group col-xs-10 col-md-4 col-xs-offset-1">
+			<a href="#" class="list-group-item">Cras justo odio</a>
+			<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+			<a href="#" class="list-group-item">Morbi leo risus</a>
+			<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+			<a href="#" class="list-group-item">Vestibulum at eros</a>
+		</div>
+
+
 	</div>
+
+
 
 	<footer class="navbar-default navbar-bottom">
 		<div class="container">

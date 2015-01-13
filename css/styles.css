@@ -347,7 +347,17 @@ header{
 }
 
 .heading-btn{
-	padding-top:8px; 
-  float: right;
+	padding-top:15px; 
+  float: left;
+	padding-left: 30px;
+}
+
+.btn-review{
+	float: right;
+}
+
+.tgbtn{
+	float: left;
+	margin-left: 30px;
 }
 /*Dashboard Page ends*/
